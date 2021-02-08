@@ -14,3 +14,23 @@ import sys
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
+
+#############################CONFIGURATIONS##############################
+#Moodle email
+email = ''
+
+#Moodle password
+password = ''
+
+#Enable to launch zoom after processing attendence
+using_zoom = True
+
+#Time pages are allowed to load in seconds
+timeout = 10
+
+#Use the correct browser driver
+driver = webdriver.Firefox(executable_path='drivers\geckodriver.exe')
+#driver = webdriver.Chrome(executable_path='drivers\geckodriver.exe')
+#driver = webdriver.Ie(executable_path='drivers\geckodriver.exe')
+
+#########################################################################
