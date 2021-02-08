@@ -7,3 +7,10 @@ The configuations must be set below or adjusted to your system to properly work.
 The driver must also be set to use the broswer installed on your system. This script has yet to go through rigourus testing so if any bugs may be encounted please report those.  
 
 """
+
+import time
+import sys
+
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.common.exceptions import NoSuchElementException
