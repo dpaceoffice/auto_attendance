@@ -61,6 +61,7 @@ def log_pass(password):
 def att_gateway():
     try:
         att_button = driver.find_element_by_partial_link_text('Submit attendance')
+        att_button.location_once_scrolled_into_view
         att_button.click()
     except NoSuchElementException:
         print('Attendance not avaliable or the username/password may be wrong')
@@ -82,7 +83,7 @@ def startup(username, password):
     log_pass(password)
     att_gateway()
     mark_attendence()
-    driver.quit()
+    driver.close()
     return True
 
 #Python cant automatically start the application through the browser for obvious reasons
