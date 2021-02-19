@@ -83,7 +83,6 @@ def startup(username, password):
     log_pass(password)
     att_gateway()
     mark_attendence()
-    driver.close()
     return True
 
 #Python cant automatically start the application through the browser for obvious reasons
@@ -100,8 +99,8 @@ def main():
         start_zoom()
         print('Zoom started - script will automatically self-destruct in 15 seconds.')
         time.sleep(15)
-        driver.quit()
-        sys.exit
+    driver.quit()
+    sys.exit
 
 if(__name__ == "__main__"):
     if(checkInfo() == False):
