@@ -1,5 +1,4 @@
 """
-Author David Pace
 
 Purpose:
 This script is designed to automatically take roll on moodle for software engineering, and start zoom after. 
